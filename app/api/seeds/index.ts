@@ -2,6 +2,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { readdir } from "node:fs/promises";
 import { createLogger } from "~/lib/logger";
+import { seedClinicDomain } from "~/api/domain/domain.seed";
 
 const logger = createLogger("Seed");
 
@@ -101,6 +102,10 @@ export async function runSeeds(): Promise<void> {
       logger.info(`Running seed ${seed.exportName} from ${path.relative(process.cwd(), seed.filePath)}`);
       await seed.run();
     }
+
+    // Explicit domain seed (lives under app/api/domain, outside the modules scan).
+    logger.info("Running seedClinicDomain from app/api/domain/domain.seed.ts");
+    await seedClinicDomain();
 
     logger.info("✅ All seed operations completed successfully");
   } catch (error) {

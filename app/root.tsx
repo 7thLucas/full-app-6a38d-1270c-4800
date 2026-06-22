@@ -13,6 +13,7 @@ import stylesheet from "~/tailwind.css?url";
 import { useEffect } from "react";
 import { ThemeProvider } from "next-themes";
 import { ConfigurablesProvider, ConfigurablesCSSBridge } from "~/modules/configurables";
+import { AuthProvider } from "~/modules/authentication";
 import { GlobalError } from "./error";
 
 function ErrorReporter({ error }: { error: any }) {
@@ -94,7 +95,7 @@ function RouteChangeReporter() {
 
 export default function App() {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -105,9 +106,11 @@ export default function App() {
         <RouteChangeReporter />
         <ConfigurablesProvider>
           <ConfigurablesCSSBridge />
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Outlet />
-          </ThemeProvider>
+          <AuthProvider>
+            <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+              <Outlet />
+            </ThemeProvider>
+          </AuthProvider>
         </ConfigurablesProvider>
         <ScrollRestoration />
         <Scripts />
