@@ -1,79 +1,39 @@
 <style>
-.mode-landscape .sl-layout { flex-direction: row; }
-.mode-portrait .sl-layout { flex-direction: column; }
-.mode-landscape .sl-left { width: 54%; }
-.mode-landscape .sl-right { width: 46%; }
-.mode-portrait .sl-left { width: 100%; flex: 1; }
-.mode-portrait .sl-right { width: 100%; height: 40%; }
+  .mode-landscape .sl-cover-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
+  .mode-landscape .sl-content-panel { width: 55%; display: flex; flex-direction: column; justify-content: center; }
+  .mode-landscape .sl-image-panel { width: 45%; min-height: 0; }
+  .mode-portrait .sl-cover-layout { display: flex; flex-direction: column; min-height: 100%; }
+  .mode-portrait .sl-content-panel { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 1.5rem; }
+  .mode-portrait .sl-image-panel { min-height: 280px; flex-shrink: 0; }
 </style>
-
 <section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-layout flex h-full">
+  <div class="sl-cover-layout h-full">
+    <div class="sl-content-panel px-10 py-12">
+      <div class="flex flex-col justify-between h-full">
+        <div>
+          <p class="text-sm font-medium tracking-widest uppercase mb-6" style="color:#2563EB;">Clinical Director &amp; Dentist</p>
+          <h1 class="text-5xl font-bold text-slate-900 leading-tight mb-6">Sistema Leire</h1>
+          <p class="text-xl text-slate-600 leading-relaxed max-w-md mb-6">Voice-activated clinical management for dental and aesthetic clinics. Leire—your AI clinical assistant—operates hands-free in the background, handling scheduling, patient records, and reporting without interrupting care.</p>
+          <div class="inline-flex items-center gap-3 border rounded-lg px-4 py-3" style="background-color:#7C3AED; border-color:#2563EB40;">
+            <div class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style="background-color:#2563EB;">
+              <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <span class="text-sm font-medium px-1" style="color:#ffffff;">Core vision: Simplified productivity</span>
 
-    <!-- Left: editorial dark column -->
-    <div class="sl-left flex flex-col justify-between p-12" style="background:#1E3A5F">
-
-      <!-- Brand mark -->
-      <div class="flex items-center gap-3">
-        <div class="w-1.5 h-6 rounded-full" style="background:#E8A500"></div>
-        <span class="text-xs font-bold tracking-widest uppercase" style="color:rgba(255,255,255,0.55)">Gestión Clínica Integral</span>
-      </div>
-
-      <!-- Headline block -->
-      <div class="flex flex-col gap-5">
-        <div class="inline-flex items-center gap-2 w-fit">
-          <span style="font-size:1.4rem">🎙️</span>
-          <span class="text-xs font-bold px-3 py-1.5 rounded-full" style="background:#E8A500;color:#1E3A5F">Di "Leire" para empezar</span>
+          </div>
         </div>
-
-        <h1 class="text-5xl font-black leading-tight" style="color:#FFFFFF">
-          La clínica<br/>que trabaja<br/>
-          <span style="color:#E8A500">contigo.</span>
-        </h1>
-
-        <p class="text-sm leading-relaxed" style="color:rgba(255,255,255,0.72);max-width:360px">
-          Suite integral para clínicas dentales, estéticas y policlínicas —
-          con <strong class="text-white">Leire</strong>, la asistente de voz
-          que gestiona tu agenda con las manos libres.
-        </p>
-
-        <!-- Capability pills -->
-        <div class="flex flex-wrap gap-2 mt-1">
-          <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(255,255,255,0.10);color:rgba(255,255,255,0.80)">🦷 Dental</span>
-          <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(255,255,255,0.10);color:rgba(255,255,255,0.80)">✨ Estética</span>
-          <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(255,255,255,0.10);color:rgba(255,255,255,0.80)">🏢 Policlínicas</span>
-          <span class="text-xs px-3 py-1 rounded-full font-medium" style="background:rgba(255,255,255,0.10);color:rgba(255,255,255,0.80)">📱 Móvil</span>
-        </div>
-      </div>
-
-      <!-- Attribution -->
-      <div>
-        <data-attribution />
-      </div>
-    </div>
-
-    <!-- Right: hero image -->
-    <div class="sl-right relative overflow-hidden">
-      <img
-        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=modern+premium+dental+and+aesthetic+clinic+interior%2C+professional+smiling+female+doctor+in+white+coat+with+tablet%2C+clean+blue+and+white+decor%2C+voice+AI+interface+subtle+glowing+overlay%2C+editorial+bright+airy+photography"
-        class="w-full h-full object-cover"
-        alt="Clínica moderna con asistente de voz"
-      />
-      <!-- Bottom gradient -->
-      <div class="absolute inset-0" style="background:linear-gradient(to top,rgba(30,58,95,0.60) 0%,transparent 55%)"></div>
-      <!-- Info tags bottom-left -->
-      <div class="absolute bottom-6 left-6 right-6 flex flex-wrap gap-2">
-        <div class="px-3 py-1.5 rounded-xl text-white text-xs font-semibold" style="background:rgba(30,58,95,0.85)">
-          🌐 Local · Red · Internet
-        </div>
-        <div class="px-3 py-1.5 rounded-xl text-white text-xs font-semibold" style="background:rgba(30,58,95,0.85)">
-          🎧 Bluetooth · WiFi
-        </div>
-        <div class="px-3 py-1.5 rounded-xl text-white text-xs font-semibold" style="background:rgba(232,165,0,0.90);color:#1E3A5F">
-          🔐 Roles y Privilegios
+        <div class="mt-auto pt-8">
+          <data-attribution />
         </div>
       </div>
     </div>
-
+    <div class="sl-image-panel relative overflow-hidden">
+      <div class="absolute inset-0" style="background:linear-gradient(135deg, #2563EB, #2563EB20);"></div>
+      <div class="absolute inset-0 flex items-center justify-center p-8">
+        <img src="http://qb-be-deck.quantumbyte:9999/common/image-generation?prompt=modern+dental+clinic+operatory+with+professional+team+using+voice+commands+interface&amp;keyspace=is3mv39y&amp;user_id=4800" alt="cover" class="max-w-full max-h-full object-contain drop-shadow-2xl rounded-2xl" />
+      </div>
+    </div>
   </div>
 </section>
