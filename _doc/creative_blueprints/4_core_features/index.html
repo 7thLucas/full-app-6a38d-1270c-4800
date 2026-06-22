@@ -1,0 +1,79 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: repeat(2, 1fr); }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="h-full flex flex-col p-10">
+    <div class="mb-5">
+      <span class="text-xs font-bold text-indigo-600 tracking-widest uppercase">Funcionalidades</span>
+      <h2 class="text-3xl font-black text-slate-900 mt-1">Diseñado para cada rol.</h2>
+    </div>
+    <!-- Persona chips -->
+    <div class="flex gap-2 mb-5 flex-wrap">
+      <div class="flex items-center gap-1.5 bg-indigo-900 text-white text-xs font-semibold px-4 py-2 rounded-full">
+        <div class="w-1.5 h-1.5 rounded-full bg-indigo-300"></div>
+        Dentista / Especialista
+      </div>
+      <div class="bg-slate-100 text-slate-600 text-xs font-medium px-4 py-2 rounded-full">Recepcionista</div>
+      <div class="bg-slate-100 text-slate-600 text-xs font-medium px-4 py-2 rounded-full">Administrador</div>
+      <div class="bg-slate-100 text-slate-600 text-xs font-medium px-4 py-2 rounded-full">Director / Gestor</div>
+    </div>
+    <!-- Feature grid -->
+    <div class="sl-grid grid gap-3 flex-1">
+      <div class="bg-indigo-900 rounded-xl p-4 flex flex-col">
+        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center mb-3 flex-shrink-0">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+        </div>
+        <h4 class="text-white font-bold text-sm mb-1">Agenda por voz</h4>
+        <p class="text-indigo-200 text-xs leading-relaxed">Crea, modifica y consulta citas sin tocar el teclado. Leire gestiona la agenda al instante.</p>
+      </div>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
+        <div class="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center mb-3 flex-shrink-0">
+          <svg class="w-4 h-4 text-teal-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+        </div>
+        <h4 class="text-slate-900 font-bold text-sm mb-1">Historia clínica</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Historial completo del paciente: tratamientos, archivos multimedia, notas y seguimiento evolutivo.</p>
+      </div>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
+        <div class="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center mb-3 flex-shrink-0">
+          <svg class="w-4 h-4 text-indigo-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+          </svg>
+        </div>
+        <h4 class="text-slate-900 font-bold text-sm mb-1">Dictado clínico</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Leire transcribe notas de consulta en tiempo real. Sin dictáfonos, sin transcripción manual posterior.</p>
+      </div>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
+        <div class="w-8 h-8 bg-amber-100 rounded-lg flex items-center justify-center mb-3 flex-shrink-0">
+          <svg class="w-4 h-4 text-amber-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+          </svg>
+        </div>
+        <h4 class="text-slate-900 font-bold text-sm mb-1">Tratamientos</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Catálogo de tratamientos y procedimientos vinculado automáticamente a agenda y facturación.</p>
+      </div>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
+        <div class="w-8 h-8 bg-slate-200 rounded-lg flex items-center justify-center mb-3 flex-shrink-0">
+          <svg class="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2v-1a2 2 0 00-2-2H8a2 2 0 00-2 2v1a2 2 0 002 2zM12 3a6 6 0 016 6v3H6V9a6 6 0 016-6z"/>
+          </svg>
+        </div>
+        <h4 class="text-slate-900 font-bold text-sm mb-1">App móvil companion</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Acceso seguro al servidor desde cualquier lugar. Conexión desde internet a la base de datos de la clínica.</p>
+      </div>
+      <div class="bg-slate-50 border border-slate-200 rounded-xl p-4 flex flex-col">
+        <div class="w-8 h-8 bg-slate-200 rounded-lg flex items-center justify-center mb-3 flex-shrink-0">
+          <svg class="w-4 h-4 text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <h4 class="text-slate-900 font-bold text-sm mb-1">Informes universales</h4>
+        <p class="text-slate-500 text-xs leading-relaxed">Cualquier dato del sistema en cualquier formato: tablas, gráficos y listados cruzando todos los módulos.</p>
+      </div>
+    </div>
+  </div>
+</section>
