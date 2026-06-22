@@ -2,24 +2,23 @@
 .mode-landscape .sl-body { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
 .mode-portrait .sl-body { display: flex; flex-direction: column; gap: 1rem; }
 </style>
-
 <section class="w-full h-full overflow-auto bg-white">
   <div class="flex flex-col h-full p-10 gap-4">
 
     <!-- Header -->
     <div class="flex items-center justify-between flex-shrink-0">
       <div class="flex items-center gap-2">
-        <div class="w-1.5 h-5 rounded-full" style="background:#E8A500"></div>
-        <span class="text-xs font-bold tracking-widest uppercase" style="color:#2E86AB">North Star</span>
+        <div class="w-1.5 h-5 rounded-full bg-indigo-700"></div>
+        <span class="text-xs font-bold tracking-widest uppercase text-indigo-700">Métrica Estrella</span>
       </div>
-      <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:#FEF3C7;color:#92400E">
-        Projected impact — based on your inputs
+      <span class="text-xs font-semibold px-3 py-1 rounded-full bg-amber-50 text-amber-800 border border-amber-200">
+        Impacto proyectado — basado en tus datos
       </span>
     </div>
 
     <div class="flex-shrink-0">
-      <h2 class="text-3xl font-black leading-tight" style="color:#1E3A5F">Weekly Verified Operations</h2>
-      <p class="text-sm mt-1" style="color:#64748B">The number Sistema Leire lives or dies by: appointments actively managed per week.</p>
+      <h2 class="text-3xl font-black text-slate-900 leading-tight">Operaciones verificadas por semana</h2>
+      <p class="text-sm mt-1 text-slate-500">El número por el que vive Sistema Leire: citas gestionadas activamente cada semana.</p>
     </div>
 
     <!-- Three-column body -->
@@ -27,77 +26,72 @@
 
       <!-- Column 1: Verified operations -->
       <div class="flex flex-col gap-3">
-        <div class="p-4 rounded-2xl h-full flex flex-col gap-3" style="background:#F8FAFC;border:1px solid #E2E8F0">
-          <p class="text-xs font-bold uppercase tracking-widest" style="color:#2E86AB">Verified Operations</p>
-
+        <div class="p-4 rounded-2xl h-full flex flex-col gap-3 bg-slate-50 border border-slate-200">
+          <p class="text-xs font-bold uppercase tracking-widest text-indigo-700">Operaciones verificadas</p>
           <div class="flex flex-col gap-2.5">
-            <div class="p-3 rounded-xl" style="background:#EFF6FF">
-              <p class="text-sm font-black" style="color:#1E3A5F">🗓️ Cita gestionada</p>
-              <p class="text-xs mt-0.5 leading-relaxed" style="color:#475569">Appointment confirmed, modified, or cancelled in the agenda — voice or text.</p>
+            <div class="p-3 rounded-xl bg-indigo-50">
+              <p class="text-sm font-black text-slate-900">Cita gestionada</p>
+              <p class="text-xs mt-0.5 leading-relaxed text-slate-600">Cita confirmada, creada o modificada en la agenda — por voz o por teclado.</p>
             </div>
-            <div class="p-3 rounded-xl" style="background:#EFF6FF">
-              <p class="text-sm font-black" style="color:#1E3A5F">📋 Historial actualizado</p>
-              <p class="text-xs mt-0.5 leading-relaxed" style="color:#475569">Patient record updated after a completed session.</p>
+            <div class="p-3 rounded-xl bg-indigo-50">
+              <p class="text-sm font-black text-slate-900">Historial actualizado</p>
+              <p class="text-xs mt-0.5 leading-relaxed text-slate-600">Registro clínico del paciente actualizado tras una sesión completada.</p>
             </div>
           </div>
-
-          <p class="text-xs italic mt-auto" style="color:#94A3B8">Clicks, logins, and page views do not count.</p>
+          <p class="text-xs italic mt-auto text-slate-400">Logins, vistas de pantalla y ediciones parciales no cuentan.</p>
         </div>
       </div>
 
       <!-- Column 2: WVO formula -->
       <div class="flex flex-col gap-3">
-        <div class="p-4 rounded-2xl h-full flex flex-col gap-3" style="background:#EFF6FF;border:1px solid #BFDBFE">
-          <p class="text-xs font-bold uppercase tracking-widest" style="color:#2E86AB">WVO Formula</p>
-
+        <div class="p-4 rounded-2xl h-full flex flex-col gap-3 bg-indigo-50 border border-indigo-200">
+          <p class="text-xs font-bold uppercase tracking-widest text-indigo-700">Fórmula WVO</p>
           <div class="flex flex-col gap-2">
             <div class="flex items-center justify-between gap-2">
-              <span class="text-xs" style="color:#1E3A5F">Staff with schedules</span>
-              <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:#FEF3C7;color:#92400E">Assumption: 4</span>
+              <span class="text-xs text-slate-700">Profesionales con agenda</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Supuesto: 4</span>
             </div>
-            <div class="text-center text-xs font-black" style="color:#CBD5E1">×</div>
+            <div class="text-center text-xs font-black text-slate-400">×</div>
             <div class="flex items-center justify-between gap-2">
-              <span class="text-xs" style="color:#1E3A5F">Citas / staff / week</span>
-              <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:#FEF3C7;color:#92400E">Assumption: 35</span>
+              <span class="text-xs text-slate-700">Citas / profesional / semana</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-100 text-amber-800">Supuesto: 35</span>
             </div>
-            <div class="border-t pt-2 mt-1" style="border-color:#BFDBFE">
+            <div class="border-t pt-2 mt-1 border-indigo-200">
               <div class="flex items-center justify-between">
-                <span class="text-sm font-bold" style="color:#1E3A5F">= WVO / week</span>
-                <span class="text-2xl font-black" style="color:#2E86AB">140</span>
+                <span class="text-sm font-bold text-slate-900">= WVO / semana</span>
+                <span class="text-2xl font-black text-indigo-700">140</span>
               </div>
+              <p class="text-xs text-slate-500 mt-0.5">4 prof. × 35 citas = 140 citas/sem</p>
             </div>
           </div>
-
-          <div class="mt-auto p-3 rounded-xl text-xs" style="background:#DBEAFE;color:#1E40AF">
-            Update the assumption chips with your actual team size and weekly appointment volume.
+          <div class="mt-auto p-3 rounded-xl text-xs bg-indigo-100 text-indigo-800">
+            Actualiza los supuestos con el tamaño real de tu equipo y el volumen de citas semanales.
           </div>
         </div>
       </div>
 
       <!-- Column 3: Value block -->
       <div class="flex flex-col gap-3">
-        <div class="p-4 rounded-2xl h-full flex flex-col gap-3" style="background:#1E3A5F">
-          <p class="text-xs font-bold uppercase tracking-widest" style="color:rgba(255,255,255,0.50)">Projected Value</p>
-
-          <div class="text-xs leading-relaxed" style="color:rgba(255,255,255,0.70)">
-            140 ops/week
-            × <span class="font-bold px-1.5 py-0.5 rounded" style="background:rgba(232,165,0,0.20);color:#E8A500">12 min saved</span>
-            × <span class="font-bold px-1.5 py-0.5 rounded" style="background:rgba(232,165,0,0.20);color:#E8A500">€22 / h staff</span>
+        <div class="p-4 rounded-2xl h-full flex flex-col gap-3 bg-indigo-900">
+          <p class="text-xs font-bold uppercase tracking-widest text-indigo-300">Valor proyectado</p>
+          <div class="text-xs leading-relaxed text-indigo-200">
+            140 ops/sem
+            × <span class="font-bold px-1.5 py-0.5 rounded bg-amber-900 text-amber-300">12 min ahorrados</span>
+            × <span class="font-bold px-1.5 py-0.5 rounded bg-amber-900 text-amber-300">22 €/h personal</span>
           </div>
-
           <div class="flex flex-col gap-2 flex-1">
-            <div class="border-t pt-2" style="border-color:rgba(255,255,255,0.12)">
-              <p class="text-xs" style="color:rgba(255,255,255,0.50)">Per week</p>
-              <p class="text-2xl font-black text-white">€616</p>
+            <div class="border-t pt-2 border-indigo-700">
+              <p class="text-xs text-indigo-400">Por semana</p>
+              <p class="text-2xl font-black text-white">616 €</p>
+              <p class="text-xs text-indigo-400">140 × (12/60) × 22 = 616 €</p>
             </div>
-            <div class="border-t pt-2" style="border-color:rgba(255,255,255,0.12)">
-              <p class="text-xs" style="color:rgba(255,255,255,0.50)">Per year (× 52)</p>
-              <p class="text-3xl font-black" style="color:#E8A500">€32,032</p>
+            <div class="border-t pt-2 border-indigo-700">
+              <p class="text-xs text-indigo-400">Por año (× 52 semanas)</p>
+              <p class="text-3xl font-black text-amber-400">32.032 €</p>
             </div>
           </div>
-
-          <p class="text-xs italic" style="color:rgba(255,255,255,0.35)">
-            Assumptions marked in amber — adjust to your clinic's real figures.
+          <p class="text-xs italic text-indigo-500">
+            Supuestos marcados en ámbar — ajusta con los datos reales de tu clínica.
           </p>
         </div>
       </div>
