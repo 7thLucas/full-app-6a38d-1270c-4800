@@ -1,0 +1,108 @@
+<style>
+.mode-landscape .sl-body { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.25rem; }
+.mode-portrait .sl-body { display: flex; flex-direction: column; gap: 1rem; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-10 gap-4">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between flex-shrink-0">
+      <div class="flex items-center gap-2">
+        <div class="w-1.5 h-5 rounded-full" style="background:#E8A500"></div>
+        <span class="text-xs font-bold tracking-widest uppercase" style="color:#2E86AB">North Star</span>
+      </div>
+      <span class="text-xs font-semibold px-3 py-1 rounded-full" style="background:#FEF3C7;color:#92400E">
+        Projected impact — based on your inputs
+      </span>
+    </div>
+
+    <div class="flex-shrink-0">
+      <h2 class="text-3xl font-black leading-tight" style="color:#1E3A5F">Weekly Verified Operations</h2>
+      <p class="text-sm mt-1" style="color:#64748B">The number Sistema Leire lives or dies by: appointments actively managed per week.</p>
+    </div>
+
+    <!-- Three-column body -->
+    <div class="sl-body flex-1 min-h-0">
+
+      <!-- Column 1: Verified operations -->
+      <div class="flex flex-col gap-3">
+        <div class="p-4 rounded-2xl h-full flex flex-col gap-3" style="background:#F8FAFC;border:1px solid #E2E8F0">
+          <p class="text-xs font-bold uppercase tracking-widest" style="color:#2E86AB">Verified Operations</p>
+
+          <div class="flex flex-col gap-2.5">
+            <div class="p-3 rounded-xl" style="background:#EFF6FF">
+              <p class="text-sm font-black" style="color:#1E3A5F">🗓️ Cita gestionada</p>
+              <p class="text-xs mt-0.5 leading-relaxed" style="color:#475569">Appointment confirmed, modified, or cancelled in the agenda — voice or text.</p>
+            </div>
+            <div class="p-3 rounded-xl" style="background:#EFF6FF">
+              <p class="text-sm font-black" style="color:#1E3A5F">📋 Historial actualizado</p>
+              <p class="text-xs mt-0.5 leading-relaxed" style="color:#475569">Patient record updated after a completed session.</p>
+            </div>
+          </div>
+
+          <p class="text-xs italic mt-auto" style="color:#94A3B8">Clicks, logins, and page views do not count.</p>
+        </div>
+      </div>
+
+      <!-- Column 2: WVO formula -->
+      <div class="flex flex-col gap-3">
+        <div class="p-4 rounded-2xl h-full flex flex-col gap-3" style="background:#EFF6FF;border:1px solid #BFDBFE">
+          <p class="text-xs font-bold uppercase tracking-widest" style="color:#2E86AB">WVO Formula</p>
+
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs" style="color:#1E3A5F">Staff with schedules</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:#FEF3C7;color:#92400E">Assumption: 4</span>
+            </div>
+            <div class="text-center text-xs font-black" style="color:#CBD5E1">×</div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-xs" style="color:#1E3A5F">Citas / staff / week</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded-full" style="background:#FEF3C7;color:#92400E">Assumption: 35</span>
+            </div>
+            <div class="border-t pt-2 mt-1" style="border-color:#BFDBFE">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-bold" style="color:#1E3A5F">= WVO / week</span>
+                <span class="text-2xl font-black" style="color:#2E86AB">140</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-auto p-3 rounded-xl text-xs" style="background:#DBEAFE;color:#1E40AF">
+            Update the assumption chips with your actual team size and weekly appointment volume.
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 3: Value block -->
+      <div class="flex flex-col gap-3">
+        <div class="p-4 rounded-2xl h-full flex flex-col gap-3" style="background:#1E3A5F">
+          <p class="text-xs font-bold uppercase tracking-widest" style="color:rgba(255,255,255,0.50)">Projected Value</p>
+
+          <div class="text-xs leading-relaxed" style="color:rgba(255,255,255,0.70)">
+            140 ops/week
+            × <span class="font-bold px-1.5 py-0.5 rounded" style="background:rgba(232,165,0,0.20);color:#E8A500">12 min saved</span>
+            × <span class="font-bold px-1.5 py-0.5 rounded" style="background:rgba(232,165,0,0.20);color:#E8A500">€22 / h staff</span>
+          </div>
+
+          <div class="flex flex-col gap-2 flex-1">
+            <div class="border-t pt-2" style="border-color:rgba(255,255,255,0.12)">
+              <p class="text-xs" style="color:rgba(255,255,255,0.50)">Per week</p>
+              <p class="text-2xl font-black text-white">€616</p>
+            </div>
+            <div class="border-t pt-2" style="border-color:rgba(255,255,255,0.12)">
+              <p class="text-xs" style="color:rgba(255,255,255,0.50)">Per year (× 52)</p>
+              <p class="text-3xl font-black" style="color:#E8A500">€32,032</p>
+            </div>
+          </div>
+
+          <p class="text-xs italic" style="color:rgba(255,255,255,0.35)">
+            Assumptions marked in amber — adjust to your clinic's real figures.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
