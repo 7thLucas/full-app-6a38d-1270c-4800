@@ -1,9 +1,9 @@
-# Producto: Sistema Leire
-> Nombre de trabajo — confirmar nombre comercial definitivo con el equipo.
+# Producto: LEIRE DENTAL Y CLÍNICA
+> Nombre comercial confirmado por el equipo. "Leire" es además el nombre de la asistente de voz nativa del sistema.
 
 ## Qué es este producto
 
-**Sistema Leire** es una suite integral de gestión clínica para clínicas dentales, clínicas estéticas y centros estéticos, incluyendo redes de policlínicas (multisede). Su diferenciador central es **Leire**, una asistente de voz activada por palabra clave que opera silenciosamente en segundo plano desde el inicio de sesión, permitiendo a todo el personal clínico gestionar citas, pacientes, informes y cualquier función del sistema con las manos libres, sin interrumpir procedimientos.
+**LEIRE DENTAL Y CLÍNICA** es una suite integral de gestión clínica para clínicas dentales, clínicas estéticas y centros estéticos, incluyendo redes de policlínicas (multisede). Su diferenciador central es **Leire**, una asistente de voz activada por palabra clave que opera silenciosamente en segundo plano desde el inicio de sesión, permitiendo a todo el personal clínico gestionar citas, pacientes, informes y cualquier función del sistema con las manos libres, sin interrumpir procedimientos.
 
 ## Usuarios objetivo
 
